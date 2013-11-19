@@ -1,0 +1,14 @@
+{
+  "name": "another-sweet-data-visualization-presentation",
+  "version": "0.0.0",
+  "homepage": "https://github.com/zzolo/another-sweet-data-visualization-presentation",
+  "authors": [
+    "Alan Palazzolo <apalazzolo@minnpost.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "reveal.js": "~2.5.0"
+  }
+}
