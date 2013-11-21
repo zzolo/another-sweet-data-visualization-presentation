@@ -80,4 +80,14 @@
       $map.removeClass('enabled');
     }
   });
+
+  Reveal.addEventListener('slidechanged', function(e) {
+    var $slide = $(e.currentSlide);
+
+    $slide.find('img.full-image, img.full-image-high').each(function() {
+      if ($(this).height() > $slide.height()) {
+        $(this).height($slide.height()).css('width', 'auto');
+      }
+    });
+  });
 })();
