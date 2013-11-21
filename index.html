@@ -19,6 +19,7 @@
       document.write( '<link rel="stylesheet" href="bower_components/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
     </script>
 
+    <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css">
     <link rel="stylesheet" href="styles/styles.css">
 
     <!--[if lt IE 9]>
@@ -26,6 +27,8 @@
     <![endif]-->
   </head>
   <body>
+    <div id="custom-map-overlay" class="disabled"></div>
+
     <div class="reveal">
 
       <!-- Any section element inside of this container is displayed as a slide -->
@@ -188,13 +191,85 @@
         </section>
 
 
-        <!-- A more complex example -->
-        <section>
-          <h1>More substance</h1>
+        <!-- Why -->
+        <section data-background="#FF668C">
+          <h1>The new hotness</h1>
 
           <aside class="notes">
           </aside>
         </section>
+
+        <section data-background="#FF668C">
+          <img class="full-image" src="images/noun_project_818-fire.svg">
+
+          <aside class="notes">
+          </aside>
+        </section>
+
+
+        <!-- Maps -->
+        <section data-transition="fade">
+          <h1>Some more data</h1>
+
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section data-map="http://{s}.tile.cloudmade.com/d4fc77ea4a63471cab2423e66626cbb6/22677/256/{z}/{x}/{y}.png">
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section data-map="http://{s}.tile.cloudmade.com/d4fc77ea4a63471cab2423e66626cbb6/999/256/{z}/{x}/{y}.png">
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section data-map="http://{s}.tiles.mapbox.com/v3/jeffmerrick.map-tnw3k3na/{z}/{x}/{y}.png">
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section data-map="http://{s}.tiles.mapbox.com/v3/examples.map-9ijuk24y/{z}/{x}/{y}.png">
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section data-map="http://{s}.tiles.mapbox.com/v3/github.map-xgq2svrz/{z}/{x}/{y}.png">
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section data-map="https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png">
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section data-map="https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png">
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section data-map="https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png">
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section data-map="http://{s}.tiles.mapbox.com/v3/nps.pt-shaded-relief,nps.pt-urban-areas,nps.pt-river-lines,nps.pt-admin-lines,nps.pt-park-poly,nps.pt-mask,nps.pt-hydro-features,nps.pt-admin-labels,nps.pt-roads,nps.pt-road-shields,nps.pt-park-points,nps.pt-hydro-labels,nps.pt-city-labels,nps.pt-park-labels/{z}/{x}/{y}.png" data-map-position="37.090239999477205,-95.71289100218564,4">
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section data-map="http://{s}.tiles.mapbox.com/v3/greenpeace-marine.greenpeace-marine-reserve/{z}/{x}/{y}.png128" data-map-position="0,0,3">
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section data-map="http://{s}.tiles.mapbox.com/v3/examples.map-qfyrx5r8/{z}/{x}/{y}.png128">
+          <aside class="notes">
+          </aside>
+        </section>
+
 
 
         <!-- Many attributions -->
@@ -216,7 +291,7 @@
             <li><a href="http://thenounproject.com/noun/infographic/#icon-No16380" target="_blank">Infographic</a> designed by <a href="http://thenounproject.com/desbenoit" target="_blank">Sébastien Desbenoit</a> from The Noun Project</li>
             <li><a href="http://thenounproject.com/noun/pie-chart/#icon-No15376" target="_blank">Pie Chart</a> designed by <a href="http://thenounproject.com/bravo" target="_blank">Juan Pablo Bravo</a> from The Noun Project</li>
             <li><a href="http://thenounproject.com/noun/pie-chart/#icon-No22891" target="_blank">Pie Chart</a> designed by <a href="http://thenounproject.com/vytautas.alechnavicius" target="_blank">Vytautas Alech</a> from The Noun Project</li>
-            <li></li>
+            <li><a href="http://thenounproject.com/noun/fire/#icon-No818" target="_blank">Fire</a> designed by <a href="http://thenounproject.com/arjunadamson" target="_blank">Arjun Adamson</a> from The Noun Project</li>
             <li></li>
             <li></li>
             <li></li>
@@ -231,6 +306,9 @@
 
     <script src="bower_components/reveal.js/lib/js/head.min.js"></script>
     <script src="bower_components/reveal.js/js/reveal.min.js"></script>
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/underscore/underscore-min.js"></script>
+    <script src="bower_components/leaflet/dist/leaflet.js"></script>
     <script src="js/app.js"></script>
 
   </body>

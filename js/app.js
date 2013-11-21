@@ -1,5 +1,8 @@
 (function() {
   var path = 'bower_components/reveal.js/';
+  var map;
+  var $map = $('#custom-map-overlay');
+  var layer;
 
   // Full list of configuration options available here:
   // https://github.com/hakimel/reveal.js#configuration
@@ -46,5 +49,35 @@
         condition: function() { return !!document.body.classList; }
       }
     ]
+  });
+
+  // Add some custom plugins
+  Reveal.addEventListener('slidechanged', function(e) {
+    var $slide = $(e.currentSlide);
+    var pos = $slide.data('mapPosition');
+
+    if ($slide.data('map')) {
+      $map.addClass('enabled');
+      if (_.isUndefined(map)) {
+        map = L.map('custom-map-overlay', {
+          keyboard: false
+        });
+      }
+      if (!_.isUndefined(layer)) {
+        map.removeLayer(layer);
+      }
+      layer = L.tileLayer($(e.currentSlide).data('map'));
+      map.addLayer(layer);
+
+      if (pos) {
+        map.setView([parseFloat(pos.split(',')[0]), parseFloat(pos.split(',')[1])], parseInt(pos.split(',')[2]), { reset: true });
+      }
+      else {
+        map.setView([44.9668187413725, -93.15680672123563], 11, { reset: true });
+      }
+    }
+    else {
+      $map.removeClass('enabled');
+    }
   });
 })();

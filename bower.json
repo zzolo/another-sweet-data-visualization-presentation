@@ -9,6 +9,9 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "reveal.js": "~2.5.0"
+    "reveal.js": "~2.5.0",
+    "leaflet": "~0.6.4",
+    "underscore": "~1.5.2",
+    "jquery": "~2.0.3"
   }
 }
