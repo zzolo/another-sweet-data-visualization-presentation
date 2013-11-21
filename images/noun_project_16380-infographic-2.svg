@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<path d="M22,2v96h56V2H22z M74,94H26V6h48V94z"/>
+<rect x="35" y="12" width="28" height="4"/>
+<rect x="32" y="48" width="36" height="4"/>
+<polygon points="60,58 40,58 40,57.902 50.001,64 60,57.902 "/>
+<rect x="32" y="70" width="8" height="8"/>
+<rect x="46" y="70" width="8" height="8"/>
+<rect x="60" y="70" width="8" height="8"/>
+<path d="M53.13,24.866c-3.925-3.925-10.29-3.925-14.215,0c-3.926,3.926-3.926,10.29,0,14.215c3.58,3.581,9.189,3.894,13.126,0.942  l-7.034-7.034L53.13,24.866z"/>
+<path d="M58.97,39.081c3.925-3.925,3.948-10.343,0.023-14.269l-8.146,8.177l7.034,7.034C58.26,39.739,58.625,39.426,58.97,39.081z"/>
+<rect x="32" y="84" width="36" height="4"/>
+</svg>

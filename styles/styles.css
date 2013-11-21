@@ -9,3 +9,19 @@ body section .serif {
 .translucent {
   opacity: 0.7;
 }
+
+.reveal section img {
+  border: 1px solid transparent;
+  box-shadow: none;
+}
+
+.reveal img.full-image {
+  width: 80%;
+  max-height: 90%;
+}
+
+.reveal .image-grid {
+  width: 15%;
+  margin: 0 1em 1em 0;
+  float: left;
+}
